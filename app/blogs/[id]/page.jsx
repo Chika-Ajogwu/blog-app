@@ -23,7 +23,7 @@ const Page = ({params}) => {
 
     useEffect(() => {
         fetchData()
-    },[])
+    },[fetchData])
 
 
   return ( data? <>
