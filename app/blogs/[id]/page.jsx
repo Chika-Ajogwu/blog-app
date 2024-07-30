@@ -5,25 +5,43 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 
-const Page = ({params}) => {
 
+const Page = ({ params }) => {
     const [data, setData] = useState(null);
-
-    const fetchData = () => {
-        for(let i=0; i<blog_data.length; i++) {
-            if(Number(params.id)===blog_data[i].id) {
-                  setData(blog_data[i]);
-
-                  console.log(blog_data[i]);
-                  break;
-            }
-        }
-    }
-
-
+  
     useEffect(() => {
-        fetchData()
-    },[fetchData])
+      const fetchData = () => {
+        for (let i = 0; i < blog_data.length; i++) {
+          if (Number(params.id) === blog_data[i].id) {
+            setData(blog_data[i]);
+            console.log(blog_data[i]);
+            break;
+          }
+        }
+      };
+  
+      fetchData();
+    }, [params.id]); // Use params.id as the dependency
+
+// const Page = ({params}) => {
+
+//     const [data, setData] = useState(null);
+
+//     const fetchData = () => {
+//         for(let i=0; i<blog_data.length; i++) {
+//             if(Number(params.id)===blog_data[i].id) {
+//                   setData(blog_data[i]);
+
+//                   console.log(blog_data[i]);
+//                   break;
+//             }
+//         }
+//     }
+
+
+//     useEffect(() => {
+//         fetchData()
+//     },[fetchData])
 
 
   return ( data? <>
