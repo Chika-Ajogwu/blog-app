@@ -79,7 +79,8 @@ const Page = ({ params }) => {
         <p className='my-3'>Before you can manage lifestyle, you must have a clear understanding of what you want to achieve. Start by reflecting on your values, aspirations, and long-term goals.</p>
     
         <h3 className='my-5 text-[18px] font-semibold'>Conclusion</h3>
-        <p className='my-3'>Managing your lifestyle is a journey that requires commitment and self-awareness. By fololowing this step-by-step guide, you can take control mof your life and make meaningful that leads to a more balanced and fulfuling lifestyle. Remember that it's okay to seek support and guidance from professionals and mentors along the way. Your well-being and happiness are worth the effort</p>
+        <p className='my-3'>Managing your lifestyle is a journey that requires commitment and self-awareness. By fololowing this step-by-step guide, you can take control of your life and make meaningful that leads to a more balanced and fulfuling lifestyle. Remember that it is okay to seek support and guidance from professionals and mentors along the way. Your well-being and happiness are worth the effort</p>
+        
     
     
         <div className='my-24'>
